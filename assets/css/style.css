@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-style: 1.6rem;
+    font-family: "Poppins", "Sen", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
