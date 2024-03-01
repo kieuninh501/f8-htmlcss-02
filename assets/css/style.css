@@ -136,6 +136,9 @@ a {
     /* xu ly anh moi kich thuoc */
     object-fit: cover;
     border-radius: 20px;
+
+    /* khong con khoang du cua anh hoac display block */
+    vertical-align: bottom;
 }
 
 .hero-sumary {
@@ -143,7 +146,7 @@ a {
     right: 0;
     bottom: 48px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
@@ -151,6 +154,7 @@ a {
 
 .hero-sumary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-sumary .item + .item {
