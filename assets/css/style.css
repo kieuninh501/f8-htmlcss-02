@@ -50,6 +50,29 @@ a {
     margin-right: auto;
 }
 
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.desc {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+
 /* ====== Header ========= */
 .header {
     background: #FFFCF4;
@@ -203,21 +226,11 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
-}
-
 .hero .desc {
     margin-top: 22px;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #5F5B53;
 }
+
+
 
 .hero .cta-group {
     display: flex;
@@ -274,4 +287,46 @@ a {
     font-size: 4.4rem;
     line-height: 1.23;
     color: #171100;
+ }
+
+ /* ====== Popular ========= */
+
+ .popular {
+    padding: 65px 0;
+    margin-top: 135px;
+ }
+
+ .popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+ }
+
+ .popular-top .controls {
+    display: flex;
+    gap: 18px;
+ }
+
+ .popular-top .control-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* de an theo mau */
+    color: var(--primary-color);
+ }
+
+ .popular-top .control-btn:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+    cursor: pointer;
  }
