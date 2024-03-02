@@ -24,7 +24,11 @@ body {
 a {
     text-decoration: none;
 }
-
+button {
+    /* bo thuoc tinh mac dinh cua button */
+    border: none;
+    background: transparent;
+}
 .btn {
     display: inline-block;
     padding: 0px 16px;
@@ -40,6 +44,7 @@ a {
 }
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 .main-content {
     width: 1170px;
@@ -245,9 +250,9 @@ a {
 }
 
 .hero .watch-video {
-    /* bo thuoc tinh mac dinh cua button */
+    /* bo thuoc tinh mac dinh cua button
     border: none;
-    background: transparent;
+    background: transparent; */
 
     display: flex;
     align-items: center;
@@ -329,4 +334,88 @@ a {
     color: #ffffff;
     background: var(--primary-color);
     cursor: pointer;
+ }
+
+ .popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+ }
+
+ .popular .course-item {
+    /* Cac phan tu item kich thuoc bang nhau */
+    flex: 1;
+
+    background: #ffffff;
+    border: 1px solid #E2DFDA;
+    border-radius: 12px;
+ }
+ .popular .course-item:hover {
+    /* khi hover vao thi border trong suot cho do giat */
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+ }
+
+
+ .popular .course-item .thumb {
+    /* chinh kich thuoc anh vua vou the cha*/
+    width: calc(100% + 2px);
+    /* set chieu cao */
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+
+    /* de border duoi anh chieu rong +2*/
+    margin: -1px;
+
+ }
+
+ .popular .course-item .info {
+    padding: 16px 22px 22px;
+ }
+
+ .popular .course-item .head,
+ .popular .course-item .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .popular .course-item .title a {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+ }
+ .popular .course-item .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+ }
+
+ .popular .rating .value {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+ }
+
+ .popular .course-item .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.85;
+ }
+
+ .popular .foot {
+    margin-top: 12px;
+ }
+
+ .popular .course-item .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+ }
+
+ .popular .course-item .book-btn:hover {
+    background: var(--primary-color);
  }
