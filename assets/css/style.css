@@ -72,6 +72,7 @@ button {
     line-height: 1.26;
 }
 
+
 .desc {
     font-size: 1.8rem;
     line-height: 1.67;
@@ -696,4 +697,82 @@ button {
 .blog .dot.active {
     background: var(--primary-color);
     cursor: default;
+}
+
+/* ====== Footer ========= */
+.footer {
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+}
+
+.footer .row .column {
+    width: 21.6%;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer .socicals {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .title {
+    display: inline-block;
+    padding-bottom: 14px;
+    padding-right: 48px;
+    /* khong co border radius nen dung border bottom */
+    border-bottom: 1px solid #59554B;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .list strong {
+    font-weight: 600;
+    color: #ffffff  ;
+}
+
+.footer .copyright {
+    padding: 28px 0;
+}
+
+.footer .copyright p {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #807D74;
+    text-align: center;
 }
